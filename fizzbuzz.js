@@ -1,4 +1,4 @@
-for (i=1; i < 101; i++) {
+function fizzbuzz(i) {
   if (i % 3 === 0 && i % 5 === 0) {
     console.log(i + ' - fizzbuzz');
   } else if (i % 5 === 0) {
@@ -8,4 +8,8 @@ for (i=1; i < 101; i++) {
   } else {
     console.log(i);
   }
+}
+
+for (i=1; i < 101; i++) {
+  fizzbuzz(i)
 }
